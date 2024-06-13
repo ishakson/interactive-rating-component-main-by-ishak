@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+   
+
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+}
+body{
+    background-color: var(--very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+}
+
+.card{
+    background-color: var(--dark-blue);
+    width: 350px;
+    height: 320px;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.star-img{
+    background-color: hsla(217, 12%, 63%, 0.1);
+    border-radius: 50%;
+    padding: 15px;
+    margin-bottom: 5%;
+
+}
+
+.title{
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.description{
+    color: var(--light-grey);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.btn{
+    background-color: hsla(217, 12%, 63%, 0.1);
+    border-radius: 50%;
+    font-size: 16px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: var(--light-grey);
+    cursor: pointer;
+    font-weight: 700;
+}
+.btn:hover {
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+}
+.selected{
+    background-color: var(--white);
+    color: var(--dark-blue);
+}
+
+.submit-btn{
+    background-color: var(--orange);
+    color: var(--very-dark-blue);
+    font-weight: 700;
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: -5%;
+}
+.submit-btn:hover{
+    background-color: var(--white);
+}
+
+
+
+.thank-you{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-blue);
+    width: 350px;
+    height: 320px;
+    border-radius: 30px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.thank-you-img{
+    margin-bottom: 5%;
+}
+
+.selected{
+    color: var(--dark-blue);
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 10px;
+
+}
+.thank-you-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thank-you-text .description{
+    margin-bottom: 5%;
+    font-weight: 500;
+    line-height: 2;
+    padding:  2px;
+    color: var(--light-grey);
+    margin-bottom: -5%;
+}
+.hidden{
+    display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* mobile view */
+@media (max-width: 375px) {
+    .card{
+        width: 70%;
+        margin:0 auto;
+        padding: 30px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .star-img{
+        padding: 10px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .description{
+        font-size: 14px;  
+        line-height: 1.5;
+        margin-bottom: 5%;
+    }
+
+    .btn-container{
+        width: 100%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .btn{
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+
+    }
+
+    .submit-btn{
+        height: 40px;
+    }
+
+    .thank-you{
+        width: 70%;
+        margin:0 auto;
+        padding: 30px;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .thank-you-img{
+        margin-bottom: 5%;
+    }
+
+    .selected{
+        margin-bottom: 7%;
+    }
+
+    .thank-you-text .description{
+        margin-bottom: 5%;
+        font-weight: 500;
+        line-height: 2;
+        padding:  2px;
+        color: var(--light-grey);
+        margin-bottom: -5%;
+    }
+
+    
+
+   
+}
